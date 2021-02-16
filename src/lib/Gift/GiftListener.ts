@@ -3,6 +3,9 @@ import Gift from './Gift'
 import { IGiftMsg, IGiftMsgData } from './GiftInterface'
 
 export default class GiftListener extends Gift {
+  static ccsid = 41016
+  static cccid = 4
+
   static EventName(): string {
     return `${GiftListener.ccsid}-${GiftListener.cccid}`
   }

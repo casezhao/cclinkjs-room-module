@@ -36,4 +36,4 @@ interface IGiftMsgData extends ICCRecvJsonData {
   data: IGiftMsg
 }
 
-export { IGiftMsg, IGiftMsgData }
+export { IGiftMsg, IGiftMsgData, IGiftListData }
