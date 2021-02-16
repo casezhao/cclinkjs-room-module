@@ -3,8 +3,11 @@ import Room from './Room'
 import { IUserJoinRoomMsg, IUserJoinRoomMsgData } from './RoomInterface'
 
 export default class RoomListener extends Room {
+  static ccsid = 512
+  static cccid = 32784
+  
   static EventName(): string {
-    return `${RoomListener.id.recv.ccsid}-${RoomListener.id.recv.cccid}`
+    return `${RoomListener.ccsid}-${RoomListener.cccid}`
   }
 
   static EventListener(cb: (userJoinRoomMsg: IUserJoinRoomMsg) => void): (data: ICCRecvJsonData) => void {

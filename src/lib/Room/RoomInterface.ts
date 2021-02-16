@@ -19,4 +19,16 @@ interface IUserJoinRoomMsgData extends ICCRecvJsonData {
   }
 }
 
-export { IUserJoinRoomMsg, IUserJoinRoomMsgData }
+interface IJoinLiveProtocol extends ICCJsonData {
+  account_id: string
+  cid: number
+  client_source: string
+  client_type: number
+  gametype: number
+  motive: string
+  recom_token: string
+  roomId: number
+  room_sessid: string
+}
+
+export { IUserJoinRoomMsg, IUserJoinRoomMsgData, IJoinLiveProtocol }
