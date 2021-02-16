@@ -3,6 +3,9 @@ import Chat from './Chat'
 import { IChatMsg, IChatMsgData } from './ChatInterface'
 
 export default class ChatListener extends Chat {
+  static ccsid = 515
+  static cccid = 32785
+  
   static EventName(): string {
     return `${ChatListener.ccsid}-${ChatListener.cccid}`
   }
