@@ -16,6 +16,9 @@ import * as RoomInterface from './lib/Room/RoomInterface'
 import User from './lib/User/User'
 import UserMethods from './lib/User/UserMethods'
 import * as UserInterface from './lib/User/UserInterface'
+import HotScore from './lib/HotScore/HotScore'
+import HotScoreListener from './lib/HotScore/HotScoreListener'
+import * as HotScoreInterface from './lib/HotScore/HotScoreInterface'
 
 export {
   Chat,
@@ -36,4 +39,7 @@ export {
   User,
   UserMethods,
   UserInterface,
+  HotScore,
+  HotScoreListener,
+  HotScoreInterface,
 }
